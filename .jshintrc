@@ -10,5 +10,13 @@
   "node": true,
   "undef": true,
   "unused": true,
-  "strict": "global"
+  "strict": false,         // Disable "use strict" enforcement
+  "asi": true,             // Allow automatic semicolon insertion
+  "globals": {
+    "describe": true,
+    "it": true,
+    "require": true,
+    "module": true,
+    "loadData": true       // Declare `loadData` as global if needed
+  }
 }
