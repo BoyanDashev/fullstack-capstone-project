@@ -1,0 +1,14 @@
+{
+  "esversion": 8,
+  "globals": {
+    "describe": true,
+    "it": true,
+    "require": true,
+    "module": true
+  },
+  "browser": true,
+  "node": true,
+  "undef": true,
+  "unused": true,
+  "strict": "global"
+}
