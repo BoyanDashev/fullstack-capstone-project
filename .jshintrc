@@ -10,4 +10,5 @@
   "node": true,
   "undef": true,
   "unused": true,
+  "strict": "global"
 }
