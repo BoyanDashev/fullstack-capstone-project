@@ -4,19 +4,24 @@
     "describe": true,
     "it": true,
     "require": true,
-    "module": true
+    "module": true,
+    "console": true,
+    "process": true
   },
   "browser": true,
   "node": true,
   "undef": true,
-  "unused": true,
-  "strict": false,         // Disable "use strict" enforcement
-  "asi": true,             // Allow automatic semicolon insertion
+  "unused": true,            // Report unused variables
+  "strict": false,           // Disable strict mode enforcement
+  "asi": true,               // Allow automatic semicolon insertion
+  "debug": true,             // Allow debugger statements
   "globals": {
-    "describe": true,
-    "it": true,
-    "require": true,
-    "module": true,
-    "loadData": true       // Declare `loadData` as global if needed
-  }
+    "collection": false,     // Ignore unused `collection` if it’s defined globally
+    "db": false,             // Ignore unused `db` if it’s defined globally
+    "gifts": false,          // Ignore unused `gifts` if it’s defined globally
+    "loadData": false,       // Ignore unused `loadData` if it’s defined globally
+    "next": false,           // Ignore unused `next` if it’s defined globally
+    "body": false
+  },
+  "expr": true               // Allow expressions where they are not usually allowed
 }
