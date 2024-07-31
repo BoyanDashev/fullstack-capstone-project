@@ -6,19 +6,17 @@
     "require": true,
     "module": true,
     "console": true,
-    "process": true
+    "process": true,
+    "collection": false, // Ignore unused `collection`
+    "db": false,         // Ignore unused `db`
+    "loadData": false,   // Ignore unused `loadData`
+    "next": false        // Ignore unused `next`
   },
   "browser": true,
   "node": true,
-  "undef": true,             // Report variables that are used but not defined
-  "unused": true,            // Report variables that are defined but not used
-  "strict": false,           // Disable strict mode enforcement if not using "use strict"
-  "asi": true,               // Allow automatic semicolon insertion
-  "debug": true,             // Allow debugger statements
-  "globals": {
-    "collection": false,     // Ignore unused `collection` if necessary
-    "db": false,             // Ignore unused `db` if necessary
-    "loadData": false,       // Ignore unused `loadData` if necessary
-    "next": false            // Ignore unused `next` if necessary
-  }
+  "undef": true,        // Report variables that are used but not defined
+  "unused": true,      // Report variables that are defined but not used
+  "strict": false,     // Disable strict mode enforcement
+  "asi": true,         // Allow automatic semicolon insertion
+  "debug": true        // Allow debugger statements
 }
